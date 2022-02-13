@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-courses = [
+courses_old = [
     'Besturingssystemen: hoorcollege',
     'Besturingssystemen: oefeningen (1Mcws)',
     'Declarative Languages: Lecture',
@@ -15,7 +15,23 @@ courses = [
     'Capita Selecta Computer Science: Artificial Intelligence'
 ]
 
-URL = 'https://people.cs.kuleuven.be/~btw/roosters2122/cws_semester_1.html'
+courses = [
+    'Fundamentals for Computer Science: Lecture',
+    'Fundamentals for Computer Science: Exercises (Group A)',
+    'Modelling of Complex Systems',
+    'Modelling of Complex Systems: Exercises (1McsA)',
+    'Software Architecture: Lecture',
+    'Software Architecture: Project (1McsA)',
+    'Machine Learning: Project',
+    'Information Retrieval and Search Engines: Lecture',
+    'Information Retrieval and Search Engines: Lecture (6 ECTS 6 ECTS)',
+    'Information Retrieval and Search Engines: Exercises (6 STP 6 STP)',
+    'Computer Vision: Lecture',
+    'Capita Selecta Computer Science: Artificial Intelligence'
+]
+
+URL_old = 'https://people.cs.kuleuven.be/~btw/roosters2122/cws_semester_1.html'
+URL = 'https://people.cs.kuleuven.be/~btw/roosters2122/cws_semester_2.html'
 
 r = requests.get(URL)
 
